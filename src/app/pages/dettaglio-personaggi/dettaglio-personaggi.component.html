@@ -1,0 +1,9 @@
+@if(selectedHero){
+    <div *ngIf="selectedHero">
+        <h2 class="mt-5 mb-3">Dettaglio del personaggio</h2>
+        <p><strong>Nome:</strong> {{ selectedHero.nome | uppercase }}</p>
+        <p><strong>Poteri:</strong> {{ selectedHero.poder.join(', ') | antiBatman: (selectedHero.nome || '') }}</p>
+    </div>
+} @else {
+    <p>Supereroe non trovato</p>
+}

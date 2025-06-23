@@ -1,0 +1,14 @@
+<h1 class="mt-5">Lista personaggi</h1>
+<div class="row mt-5">
+  @for (hero of heroes; track hero.id) {
+    <div class="col-3 mb-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <p class="text-center"><b>{{ hero.nome | uppercase }}</b></p>
+          <button class="btn btn-primary w-100" routerLink="/{{ hero.id }}">Dettaglio personaggio</button>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+

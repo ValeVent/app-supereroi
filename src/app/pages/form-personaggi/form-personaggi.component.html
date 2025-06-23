@@ -1,0 +1,29 @@
+<div class="row mt-5">
+    <div class="offset-3 col-6">
+        <div class="card">
+            <div class="card-body">
+                <form [formGroup]="insertHeroForm" (ngSubmit)="addHero(insertHeroForm.value)">
+                    <input type="hidden" formControlName="id">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" formControlName="nome" id="nome" class="form-control">
+                        @if(insertHeroForm.get('nome')?.touched && insertHeroForm.get('nome')?.errors) {
+                            <div class="text-danger">Il nome del tuo eroe è obbligatorio</div>
+                        }
+                    </div>
+                    <div class="mb-3">
+                        <label for="poder" class="form-label">Poteri</label>
+                        <button type="button" class="btn btn-primary ms-3" (click)="addPotere()">Aggiungi Potere</button>
+                        <div formArrayName="poder">
+                            <div class="input-group mt-2 mb-2" *ngFor="let potere of getPoteriControls(); let i = index">
+                                <input type="text" class="form-control" [formControlName]="i">
+                                <button type="button" class="btn btn-danger" (click)="removePotere(i)">X</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" [disabled]="insertHeroForm.invalid">Aggiungi</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
