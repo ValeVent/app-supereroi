@@ -98,15 +98,15 @@ Questo è fondamentale per permettere all'app Angular di comunicare con il serve
 
 4. Deploy su Render.com:
 
-Crea un account su Render.com.
+- Crea un account su Render.com.
 
-Crea un nuovo "Web Service".
+- Crea un nuovo "Web Service".
 
-Connetti il tuo repository GitHub del backend (supereroi-backend).
+- Connetti il tuo repository GitHub del backend (supereroi-backend).
 
-Configura il "Build Command" (es. npm install) e lo "Start Command" (es. node server.js).
+- Configura il "Build Command" (es. npm install) e lo "Start Command" (es. node server.js).
 
-Render.com assegnerà un URL pubblico al tuo backend. Assicurati che il BASE_URL nel tuo frontend Angular (src/app/shared/base_url.ts) punti a questo URL. Nel codice fornito, è già impostato a https://supereroi-api.onrender.com/supereroi.
+- Render.com assegnerà un URL pubblico al tuo backend. Assicurati che il BASE_URL nel tuo frontend Angular (src/app/shared/base_url.ts) punti a questo URL. Nel codice fornito, è già impostato a https://supereroi-api.onrender.com/supereroi.
 
 ### Installazione e Avvio del Frontend (Applicazione Angular)
 1. Clona il repository del frontend:
