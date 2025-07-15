@@ -47,6 +47,8 @@ Inoltre, l'applicazione presenta due funzionalità custom interessanti:
 ## Funzionalità Principali
 - Visualizzazione Lista Supereroi: Mostra un elenco di supereroi con i loro nomi.
 
+- Indicatore di Caricamento: Durante il recupero iniziale dei dati dei supereroi dal backend (che può subire un "cold start" su servizi gratuiti), viene visualizzato un indicatore di caricamento per migliorare l'esperienza utente.
+
 - Creazione Nuovo Supereroe: Un form dedicato permette di aggiungere nuovi supereroi, con la possibilità di aggiungere dinamicamente più poteri.
 
 - Dettaglio Supereroe: Cliccando su un supereroe dalla lista, si accede a una pagina dedicata che mostra il nome e tutti i poteri.
