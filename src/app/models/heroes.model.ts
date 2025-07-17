@@ -1,5 +1,5 @@
 export interface IHeroe {
-  id: number
+  id: string
   nome: string
   poder: string[]
 }

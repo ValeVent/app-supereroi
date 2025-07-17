@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://68592586138a18086dfd3d73.mockapi.io/supereroi';
+export const BASE_URL = 'https://supereroi-api.onrender.com/supereroi'; // usato render.com per il deploy

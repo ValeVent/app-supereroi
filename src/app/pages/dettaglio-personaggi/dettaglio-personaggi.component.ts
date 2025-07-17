@@ -11,20 +11,21 @@ import { catchError, of } from 'rxjs';
 })
 export class DettaglioPersonaggiComponent implements OnInit {
 
-  id!: number;
+  id!: string;
   selectedHero: IHeroe | null = null;
 
   constructor(private supereroiService: SupereroiService, private activatedRoute: ActivatedRoute) {}
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => {
-      this.id = +params['id'];  
+      this.id = params['id'];  
+      console.log('ID dal route:', this.id);
       if (this.id) {
         this.getHero(this.id); 
       }
     });
   }
 
-  getHero(id: number): void {
+  getHero(id: string): void {
     this.supereroiService.getHero(id)
     .pipe(
       catchError((error) => {

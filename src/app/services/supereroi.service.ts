@@ -14,9 +14,10 @@ export class SupereroiService {
   getHeroes(): Observable<IHeroe[]> {
     return this.http.get<IHeroe[]>(`${BASE_URL}`);
   }
-  getHero(id: number): Observable<IHeroe> {
+  getHero(id: string): Observable<IHeroe> {
     return this.http.get<IHeroe>(`${BASE_URL}/${id}`);
   }
+
   addHero(hero: IHeroe): Observable<IHeroe> {
     return this.http.post<IHeroe>(`${BASE_URL}`, hero);
   }

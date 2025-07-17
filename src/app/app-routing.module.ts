@@ -19,7 +19,7 @@ const routes: Routes = [
     component: FormPersonaggiComponent
   },
   {
-    path: ':id',
+    path: 'heroes/:id',
     component: DettaglioPersonaggiComponent
   },
   {
