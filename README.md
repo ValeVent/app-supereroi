@@ -15,53 +15,53 @@ Inoltre, l'applicazione presenta due funzionalità custom interessanti:
 
 ## Tecnologie Utilizzate
 ### Frontend (Angular)
-- Angular: Framework principale per lo sviluppo dell'applicazione.
+- **Angular**: Framework principale per lo sviluppo dell'applicazione.
 
-- TypeScript: Linguaggio di programmazione per lo sviluppo di Angular.
+- **TypeScript**: Linguaggio di programmazione per lo sviluppo di Angular.
 
-- HTML: Struttura dei componenti e dei template.
+- **HTML**: Struttura dei componenti e dei template.
 
-- CSS: Styling dei componenti.
+- **CSS**: Styling dei componenti.
 
-- Angular Router: Per la navigazione tra le diverse pagine/viste dell'applicazione (lista eroi, form di creazione, dettaglio eroe).
+- **Angular Router**: Per la navigazione tra le diverse pagine/viste dell'applicazione (lista eroi, form di creazione, dettaglio eroe).
 
-- Angular Forms (Reactive Forms): Per la gestione dei form complessi, come quello per la creazione di nuovi supereroi con array dinamici di poteri.
+- **Angular Forms (Reactive Forms)**: Per la gestione dei form complessi, come quello per la creazione di nuovi supereroi con array dinamici di poteri.
 
-- Angular HttpClient: Per effettuare richieste HTTP all'API esterna.
+- **Angular HttpClient**: Per effettuare richieste HTTP all'API esterna.
 
-- RxJS: Per la gestione dei flussi di dati asincroni (es. chiamate API).
+- **RxJS**: Per la gestione dei flussi di dati asincroni (es. chiamate API).
 
-- Bootstrap 5: Framework CSS utilizzato per il layout responsivo e lo stile dei componenti (es. navbar, card, btn, form-control).
+- **Bootstrap 5**: Framework CSS utilizzato per il layout responsivo e lo stile dei componenti (es. navbar, card, btn, form-control).
 
 ### Backend (json-server su Render.com)
-- json-server: Un server REST API full fake con zero codifica in meno di un minuto.
+- **json-server**: Un server REST API full fake con zero codifica in meno di un minuto.
 
-- Node.js: Ambiente di runtime per eseguire json-server.
+- **Node.js**: Ambiente di runtime per eseguire json-server.
 
-- Express.js (implicito tramite json-server): Per la gestione delle richieste HTTP.
+- **Express.js (implicito tramite json-server)**: Per la gestione delle richieste HTTP.
 
-- cors: Middleware Node.js per abilitare il Cross-Origin Resource Sharing.
+- **cors**: Middleware Node.js per abilitare il Cross-Origin Resource Sharing.
 
-- Render.com: Piattaforma cloud utilizzata per il deployment del backend json-server, fornendo un URL pubblico e persistente.
+- **Render.com**: Piattaforma cloud utilizzata per il deployment del backend json-server, fornendo un URL pubblico e persistente.
 
 ## Funzionalità Principali
-- Visualizzazione Lista Supereroi: Mostra un elenco di supereroi con i loro nomi.
+- **Visualizzazione Lista Supereroi**: Mostra un elenco di supereroi con i loro nomi.
 
-- Indicatore di Caricamento: Durante il recupero iniziale dei dati dei supereroi dal backend (che può subire un "cold start" su servizi gratuiti), viene visualizzato un indicatore di caricamento per migliorare l'esperienza utente.
+- **Indicatore di Caricamento**: Durante il recupero iniziale dei dati dei supereroi dal backend (che può subire un "cold start" su servizi gratuiti), viene visualizzato un indicatore di caricamento per migliorare l'esperienza utente.
 
-- Creazione Nuovo Supereroe: Un form dedicato permette di aggiungere nuovi supereroi, con la possibilità di aggiungere dinamicamente più poteri.
+- **Creazione Nuovo Supereroe**: Un form dedicato permette di aggiungere nuovi supereroi, con la possibilità di aggiungere dinamicamente più poteri.
 
-- Dettaglio Supereroe: Cliccando su un supereroe dalla lista, si accede a una pagina dedicata che mostra il nome e tutti i poteri.
+- **Dettaglio Supereroe**: Cliccando su un supereroe dalla lista, si accede a una pagina dedicata che mostra il nome e tutti i poteri.
 
-- Gestione Dati con Servizio: Un servizio Angular (SupereroiService) gestisce tutte le interazioni con l'API esterna.
+- **Gestione Dati con Servizio**: Un servizio Angular (SupereroiService) gestisce tutte le interazioni con l'API esterna.
 
-- HTTP Interceptor Personalizzato: BatmanInterceptor intercetta le risposte dell'API, mostrando un avviso se il supereroe recuperato è "Batman".
+- **HTTP Interceptor Personalizzato**: BatmanInterceptor intercetta le risposte dell'API, mostrando un avviso se il supereroe recuperato è "Batman".
 
-- Custom Pipe AntiBatmanPipe: Trasforma la visualizzazione dei poteri per il personaggio "Batman" nella pagina di dettaglio.
+- **Custom Pipe AntiBatmanPipe**: Trasforma la visualizzazione dei poteri per il personaggio "Batman" nella pagina di dettaglio.
 
-- Deployment su Render.com: Il backend è accessibile tramite un URL pubblico, permettendo all'applicazione Angular di funzionare anche quando deployata su GitHub Pages.
+- **Deployment su Render.com**: Il backend è accessibile tramite un URL pubblico, permettendo all'applicazione Angular di funzionare anche quando deployata su GitHub Pages.
 
-- Gestione CORS: Il backend è configurato per accettare richieste cross-origin, risolvendo i problemi di sicurezza del browser.
+- **Gestione CORS**: Il backend è configurato per accettare richieste cross-origin, risolvendo i problemi di sicurezza del browser.
 
 ## Come Avviare il Progetto
 Questo progetto richiede l'esecuzione sia del frontend (applicazione Angular) che del backend (JSON Server deployato).
@@ -136,11 +136,11 @@ ng serve
 Questo progetto è un'applicazione Angular completa e funzionale che dimostra l'integrazione con un backend esterno deployato, la gestione delle API, il routing, i form reattivi e l'implementazione di funzionalità avanzate come interceptor e pipe custom. È un ottimo esempio di come superare le sfide di deployment per progetti full-stack su piattaforme di hosting statico.
 
 ## Contatti
-- GitHub: https://github.com/ValeVent
+- **GitHub**: https://github.com/ValeVent
 
-- LinkedIn: https://www.linkedin.com/in/valentina-venturo
+- **LinkedIn**: https://www.linkedin.com/in/valentina-venturo
 
-- Sito Web: http://www.valentinaventuro.it
+- **Sito Web**: http://www.valentinaventuro.it
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
 
