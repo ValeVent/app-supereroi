@@ -136,7 +136,9 @@ ng serve
 Questo progetto è un'applicazione Angular completa e funzionale che dimostra l'integrazione con un backend esterno deployato, la gestione delle API, il routing, i form reattivi e l'implementazione di funzionalità avanzate come interceptor e pipe custom. È un ottimo esempio di come superare le sfide di deployment per progetti full-stack su piattaforme di hosting statico.
 
 ## Contatti
-- **GitHub**: https://github.com/ValeVent
+- **GitHub (Frontend)**: https://github.com/ValeVent/app-supereroi
+
+- **GitHub (Backend)**: https://github.com/ValeVent/supereroi-backend
 
 - **LinkedIn**: https://www.linkedin.com/in/valentina-venturo
 
